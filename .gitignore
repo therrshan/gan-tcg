@@ -1,0 +1,8 @@
+.venv/
+__pychache__
+*.pyc
+*.pyo
+
+
+processed_pokemon_data/
+raw_pokemon_data/
