@@ -7,3 +7,4 @@ __pychache__
 processed_pokemon_data/
 raw_pokemon_data/
 outputs/
+runs/

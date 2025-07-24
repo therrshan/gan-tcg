@@ -1,0 +1,38 @@
+{
+  "data_dir": "processed_pokemon_data",
+  "num_epochs": 100,
+  "batch_size": 32,
+  "latent_dim": 128,
+  "generator_lr": 0.0005,
+  "discriminator_lr": 0.0002,
+  "save_frequency": 10,
+  "sample_frequency": 5,
+  "use_patch_gan": true,
+  "device": "auto",
+  
+  "experiment_info": {
+    "description": "Pokemon GAN baseline training",
+    "model_type": "AC-GAN",
+    "dataset": "Pokemon sprites with type conditioning",
+    "notes": "Standard hyperparameters for initial testing"
+  },
+  
+  "optimizer_config": {
+    "beta1": 0.5,
+    "beta2": 0.999,
+    "weight_decay": 0.0
+  },
+  
+  "data_config": {
+    "image_size": 64,
+    "num_workers": 4,
+    "pin_memory": true,
+    "shuffle": true
+  },
+  
+  "loss_config": {
+    "adversarial_weight": 1.0,
+    "auxiliary_weight": 1.0,
+    "gradient_penalty": false
+  }
+}
